@@ -14,10 +14,12 @@ import DashBoard from "../../pages/DashBoard";
 import Users from "../../pages/Users";
 import Settings from "../../pages/Settings";
 import NotFound from "../../pages/NotFound";
+import ScrollToTop from "../ScrollToTop";
 
 const AppRouter = () => {
     return (
         <BrowserRouter>
+            <ScrollToTop/>
             <Routes>
                 <Route element={<DefaultLayout/>}>
                     <Route path="/" element={<Home/>}/>

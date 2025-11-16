@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 const DefaultLayout = () => {
     return (
-        <div>
+        <div className="min-h-screen flex flex-col">
             <Header/>
-            <div className="container">
+            <div className="flex-1">
                 <Outlet/>
             </div>
             <Footer/>
